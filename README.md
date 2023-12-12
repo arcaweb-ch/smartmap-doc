@@ -20,29 +20,9 @@ See license.txt
 ## Init map instance
 ```js
 var map = new SmartMap({
-    container: '#map_container', // DOM container element
-    merge_data: statdata, // Merge custom data with map data
-    onselect: function (map, commune) { // Called when a commune is selected
-
-        // Log commune data to console
-        console.log(commune);
-
-        // Create popup content
-        let popupcontent = '<b>Comune di ' + commune.name + '</b>';
-        popupcontent += '<br>Distretto di ' + commune.district.name + '  // ' + commune.zone.name;
-        popupcontent += '<br>Altitudine: ' + commune.Altitudine + ' m';
-        popupcontent += '<br>Abitanti: ' + commune.Popolazione;
-
-        // Show popup
-        showPopup(popupcontent);
-    },
-    onzoomout: function (map) { // Called when map is zoomed out
-
-        // Hide popup
-        hidePopup();
-
-    },
+    container: '#map_container', // Container DOM selector
 });
+```
 
 # Methods
 ```js
