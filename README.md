@@ -1,27 +1,44 @@
-# smartmap-doc
- Arcaweb SmartMap docs and demo
+# Arcaweb SmartMap docs and demo
 
-# Licensing
-See license.txt
+Quickly integrate interactive maps with zoom and pan functionalities on desktop and mobile web apps
 
-# Working Demo url
+## Features
+
+All features are demonstrated in demo code:
+
+- SVG vector maps
+- Fully responsive and mobile capable
+- Smooth color changes and zoom transitions
+- Automatic text visibility based on zoom
+- Automatic zoom to selection
+- Automatic mapping of external JSON data
+- Customizable callbacks on commune selection
+- Ready-to-use complete map of Ticino (Switzerland)
+- Up-to-date districts, regions, communes, custom zones
+- Customizable legend items
+
+## Working Demo
+
 https://www.arcaweb.ch/smartmap/
 
 
 # Usage and requirements
 
 ## Add required JS
+
 ```html
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://www.arcaweb.ch/smartmap/dist/1.0.0/smartmap.min.js"></script>
 ```
 
 ## Add required CSS
+
 ```html
 <link rel="stylesheet" href="https://www.arcaweb.ch/smartmap/dist/1.0.0/smartmap.css">
 ```
 
 ## Init map instance
+
 ```js
 var map = new SmartMap({
     container: '#map_container', // Container DOM selector
@@ -29,6 +46,7 @@ var map = new SmartMap({
 ```
 
 # Options and events
+
 ## Init map instance
 
 Init configuration parameters and callback events. Current available maps: ticino
@@ -49,6 +67,7 @@ Init configuration parameters and callback events. Current available maps: ticin
 ```
 
 # Methods
+
 ```js
 
 /*
