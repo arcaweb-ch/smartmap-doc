@@ -4,7 +4,7 @@ All rights reserved.
 
 This software and its source code, referred to as "Arcaweb SmartMap", are proprietary and confidential. Unauthorized copying of this file, via any medium, is strictly prohibited.
 
-Commercial License for Offuscated Library Use
+Commercial License for Library Use
 This software is available for use under a commercial license. The following terms apply:
 
 Licensed Use of Library: Permission is granted to use this code and external SmartMap library exclusively under the terms of a commercial license agreement.
