@@ -38,13 +38,11 @@ All features are demonstrated in [demo](https://www.arcaweb.ch/smartmap/) code s
 
 ```js
 var map = new SmartMap({
-    container: '#map_container', // Container DOM selector
+    container: '#map_container', // Container DOM selector (Required)
 });
 ```
 
-# Options and events
-
-## Init map instance
+## Options and events
 
 Init configuration parameters and callback events. Current available maps: ticino
 ```js
@@ -63,7 +61,7 @@ Init configuration parameters and callback events. Current available maps: ticin
 
 ```
 
-# Methods
+## Class methods
 
 ```js
 
