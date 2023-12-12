@@ -24,6 +24,26 @@ var map = new SmartMap({
 });
 ```
 
+# Options and events
+## Init map instance
+
+Init configuration parameters and callback events
+```
+
+Current available maps: ticino
+map {String} - Map name (overrides svg and json parameters)
+maps_provider_url {String} - Maps provider url
+svg {String} - SVG string or url
+json {String} - JSON object or url
+container {String} - Container selector
+zoom {Boolean} - Enable zoom
+zoom_onselect {Boolean} - Zoom on select
+onselect {Function} - On select callback
+onzoomout {Function} - On zoom out callback
+oninit {Function} - On after init callback
+
+```
+
 # Methods
 ```js
 getCommunes()  // Get all communes
