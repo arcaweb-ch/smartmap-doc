@@ -65,7 +65,11 @@ function resetMapData() {
 // Listen for popup click
 document.getElementById('popup').addEventListener('click', () => {
 
-    resetMapData();
+    // Zoom out to full map view
+    map.zoomOut();
+
+    // Unselect previously selected commune
+    map.unselectAll();
 
 });
 
