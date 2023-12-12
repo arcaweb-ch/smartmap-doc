@@ -1,10 +1,10 @@
 # Arcaweb SmartMap docs and demo
 
-Quickly integrate interactive maps with zoom and pan functionalities on desktop and mobile web apps
+Quickly integrate interactive maps with zoom and pan functionalities on desktop and mobile web apps.
 
 ## Features
 
-All features are demonstrated in demo code:
+All features are demonstrated in [demo](https://www.arcaweb.ch/smartmap/) code source:
 
 - SVG vector maps
 - Fully responsive and mobile capable
@@ -17,10 +17,7 @@ All features are demonstrated in demo code:
 - Up-to-date districts, regions, communes, custom zones
 - Customizable legend items
 
-## Working Demo
-
-https://www.arcaweb.ch/smartmap/
-
+![SmartMap](https://www.arcaweb.ch/smartmap/demo.png)
 
 # Usage and requirements
 
