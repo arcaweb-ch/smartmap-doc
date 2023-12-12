@@ -31,25 +31,29 @@ var map = new SmartMap({
 # Options and events
 ## Init map instance
 
-Init configuration parameters and callback events
-```
-
-Current available maps: ticino
-map {String} - Map name (overrides svg and json parameters)
-maps_provider_url {String} - Maps provider url
-svg {String} - SVG string or url
-json {String} - JSON object or url
-container {String} - Container selector
-zoom {Boolean} - Enable zoom
-zoom_onselect {Boolean} - Zoom on select
-onselect {Function} - On select callback
-onzoomout {Function} - On zoom out callback
-oninit {Function} - On after init callback
+Init configuration parameters and callback events. Current available maps: ticino
+```js
+{
+  map: "{String}", // - Map name (overrides svg and json parameters)
+  maps_provider_url: "{String}", // - Maps provider url
+  svg: "{String}", // - SVG string or url
+  json: "{String}", // - JSON object or url
+  container: "{String}", // - Container selector
+  zoom: "{Boolean}", // - Enable zoom
+  zoom_onselect: "{Boolean}", // - Zoom on select
+  onselect: "{Function}", // - On select callback
+  onzoomout: "{Function}", // - On zoom out callback
+  oninit: "{Function}", // - On after init callback
+}
 
 ```
 
 # Methods
 ```js
+
+/*
+* Get data
+*/
 getCommunes()  // Get all communes
 getCommuneById(id)  // Get commune by id
 getCommuneByName(name)  // Get commune by name
@@ -62,36 +66,23 @@ getRegions()  // Get all regions
 getRegion(id)  // Get region by id
 getZones()  // Get all zones
 getZone(id)  // Get zone by id
-fillZones()  // Fill zones according to json data
+
+/*
+* Map interactions
+*/
 fillZone(id, color)  // Fill zone by id
 fillRegion(id, color)  // Fill region by id
 fillDistrict(id, color)  // Fill district by id
+fillCommune(id, color)  // Fill commune by id
 unFillAll()  // Unfill all communes
 unFillCommune(id)  // Unfill commune by id
-fillCommune(id, color)  // Fill commune by id
 selectCommune(id)  // Select commune by id
-hoverCommune(id)  // Hover commune by id
-unhoverCommune(id)  // Unhover commune by id
 zoomOut()  // Zoom out
 zoomToCommune(id)  // Zoom to commune by id
-zoomToPath(id)  // Zoom to path by id
 setLegend(legend)  // Set legend
 clearLegend()  // Clear legend
 addLegendItem(color, text)  // Add legend item
 setCommuneText(id, text, append)  // Set commune text
 resetCommuneTexts()  // Reset all commune texts
-getBBox(id)  // Get bounding box of element
-showLegend()  // Show legend
-hideLegend()  // Hide legend
-initZoom()  // Init zoom
-initSvg()  // Init svg
-initData()  // Init data
-initElements()  // Init elements
-handleZoom(event)  // Handle zoom
 unselectAll()  // Unselect all
-selectPath(id)  // Select path by id
-hoverPath(id)  // Hover path by id
-unHoverAll()  // Unhover all
-mergeData(merge_data)  // Merge data with existing data
-getCommuneFull(commune)  // Get commune with district, region and zone
 ```
