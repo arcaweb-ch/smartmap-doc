@@ -4,6 +4,10 @@
 # Licensing
 See license.txt
 
+# Working Demo url
+https://www.arcaweb.ch/smartmap/
+
+
 # Usage and requirements
 
 ## Add required JS
