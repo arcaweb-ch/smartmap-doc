@@ -38,7 +38,8 @@ All features are demonstrated in [demo](https://www.arcaweb.ch/smartmap/) code s
 
 ```js
 var map = new SmartMap({
-    container: '#map_container', // Container DOM selector (Required)
+    container: '#map_container',
+    map: 'ticino'
 });
 ```
 
@@ -47,7 +48,8 @@ var map = new SmartMap({
 Init configuration parameters and callback events. Current available maps: ticino
 ```js
 {
-  map: "{String}", // - Map name (overrides svg and json parameters)
+  container: {String} // DOM container selector (required)
+  map: "{String}", // - Map name (overrides svg and json parameters) default: "ticino"
   maps_provider_url: "{String}", // - Maps provider url
   svg: "{String}", // - SVG string or url
   json: "{String}", // - JSON object or url
